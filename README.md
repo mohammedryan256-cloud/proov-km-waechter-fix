@@ -30,16 +30,16 @@ The objective of this challenge was to take a legacy 2013-era Python codebase ri
 
 ## 📂 Repository Structure
 
-* `TASK.md` — Project mission brief and constraints[cite: 4].
-* `NOTES.md` — Verification audit log showing agent corrections and data analysis findings[cite: 4].
-* `km_wachter.py` / `fleet_report.py` — Main business logic modules refactored and fixed[cite: 4].
-* `test_km_wachter.py` / `test_fleet_report.py` — Unit test suite verifying logic correctness[cite: 4].
-* `analyze.py` — Breakdown-risk analysis script[cite: 4].
-* `verify.py` — Acceptance check script confirming task completion[cite: 4].
-* `fleet_history.csv` — Labeled dataset used for breakdown analysis[cite: 4].
+* `TASK.md` — Project mission brief and constraints
+* `NOTES.md` — Verification audit log showing agent corrections and data analysis findings
+* `km_wachter.py` / `fleet_report.py` — Main business logic modules refactored and fixed
+* `test_km_wachter.py` / `test_fleet_report.py` — Unit test suite verifying logic correctness
+* `analyze.py` — Breakdown-risk analysis script
+* `verify.py` — Acceptance check script confirming task completion
+* `fleet_history.csv` — Labeled dataset used for breakdown analysis
 
 LEAD BACKEND DEVELOPER: MOHAMMED RAIYAN
-CORE ACCOUNT PROFILE: mohammedryan256@gmail.com---
+Contact E: mohammedryan256@gmail.com
 
 ## 🚀 How to Run & Verify
 
