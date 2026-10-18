@@ -7,40 +7,44 @@ hidden bugs, several tests fail, and the code is written in an old style. Your j
 fix and modernize it — with IBM Bob (or another AI coding agent; another agent works just
 as well) doing the heavy lifting while you direct and audit it.
 
-> **Fictional company disclaimer.** Vossberg Mobility and KM-Wächter are invented for
-> teaching and are labelled as such in-app. They are not a real company. Industry figures
-> referenced in the accompanying brief come from public sources.
+ Ḍ# 🚗 The Legacy Fix — ProoV Guided Project (Powered by IBM Bob)
 
-## How to run
+> **Certificate Earned:** IBM Bobathon: The Legacy Fix - Modernize a Real Car-Company Service  
+> **Issued By:** IBM SkillsBuild  
 
-You do not need Python installed to do this task — your AI agent can run all of this for
-you. If you do want to run it yourself, you need `python3`:
-
-```
-pip install pytest pandas
-pytest          # the test suite (currently red)
-python verify.py  # your acceptance check: is the job actually done?
-```
-
-The test suite is **red on purpose** — that is the starting point of the task, not a bug in
-this template.
-
-## What's in this repo
-
-- **`TASK.md`** — your mission brief. Read this first; it has every step of the task,
-  what NOT to change, and how to hand the work back in.
-- **`verify.py`** — your own acceptance check. It does not grade you — it tells you,
-  mechanically, whether the job is actually done, so "finished" is something you checked
-  rather than something your AI agent told you. Run `python verify.py` before you hand in.
-- **`km_wachter.py` / `fleet_report.py`** — the two core modules with the hidden bugs.
-- **`config_loader.py` / `fleet_utils.py` / `log_util.py`** — 2013-era helper modules: dated
-  style, dead code, and at least one more quiet problem no test catches.
-- **`settings.cfg`** — the maintenance rules, read at runtime. The values must not change.
-- **`test_km_wachter.py` / `test_fleet_report.py`** — the test suite (currently red).
-- **`analyze.py`** — the "make it smarter" capstone: a data-driven breakdown-risk analysis.
-- **`fleet_history.csv`** — 120 labelled cars for the analysis step.
-- **`NOTES.md`** — write this yourself: what your AI agent got wrong that you caught.
+This repository contains the solution and modernized codebase for **KM-Wächter**, the service responsible for determining service schedules and printing nightly fleet-health reports for **Vossberg Mobility's 6,000 cars**.
 
 ---
+
+## 🎯 Project Overview & Objective
+
+The objective of this challenge was to take a legacy 2013-era Python codebase riddled with technical debt, hidden bugs, and broken unit tests, and modernize it using AI-assisted engineering with **IBM Bob**, followed by rigorous developer verification.
+
+### Key Achievements:
+- 🛠️ **Bug Fixing & Refactoring:** Fixed logic errors in `km_wachter.py` and `fleet_report.py`.
+- 🧪 **Test Suite Verification:** Fixed failing tests in `test_km_wachter.py` and `test_fleet_report.py` to turn the test suite green.
+- 📊 **Data-Driven Risk Analysis:** Utilized `analyze.py` on 120 historical fleet records (`fleet_history.csv`) to isolate primary predictors of vehicle breakdown.
+- 🔍 **AI Output Auditing:** Documented AI agent errors and code verification steps in `NOTES.md`.
+
+---
+
+## 📂 Repository Structure
+
+* `TASK.md` — Project mission brief and constraints[cite: 4].
+* `NOTES.md` — Verification audit log showing agent corrections and data analysis findings[cite: 4].
+* `km_wachter.py` / `fleet_report.py` — Main business logic modules refactored and fixed[cite: 4].
+* `test_km_wachter.py` / `test_fleet_report.py` — Unit test suite verifying logic correctness[cite: 4].
+* `analyze.py` — Breakdown-risk analysis script[cite: 4].
+* `verify.py` — Acceptance check script confirming task completion[cite: 4].
+* `fleet_history.csv` — Labeled dataset used for breakdown analysis[cite: 4].
+
+LEAD BACKEND DEVELOPER: MOHAMMED RAIYAN
+CORE ACCOUNT PROFILE: mohammedryan256@gmail.com---
+
+## 🚀 How to Run & Verify
+
+1. **Install Dependencies:**
+   ```bash
+   pip install pytest pandas
 
 This challenge is part of the ProoV project "The Legacy Fix" — https://projectstudy.in/explore/experience-legacy-fix
